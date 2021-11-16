@@ -11,6 +11,9 @@ struct ContentView: View {
     
     @State private var showAward = false
     
+    // Main Size of Big Heart
+    private let size: CGFloat = 180
+    
     var body: some View {
         
         ZStack {
@@ -18,64 +21,31 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             
+            SmallHeartView(showAward: showAward, size: size, color: .green)
+                .offset(x: showAward ? 0 : 0, y: showAward ? -size * 0.625 : 0)
+            SmallHeartView(showAward: showAward, size: size, color: .purple)
+                .offset(x: showAward ? -size * 0.625 : 0, y: showAward ? 0 : 0)
+            SmallHeartView(showAward: showAward, size: size, color: .yellow)
+                .offset(x: showAward ? size * 0.625 : 0, y: showAward ? 0 : 0)
+            SmallHeartView(showAward: showAward, size: size, color: .orange)
+                .offset(x: showAward ? 0 : 0, y: showAward ? size * 0.625 : 0)
             
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? 0 : 0, y: showAward ? -25 : 0)
-                .foregroundColor(.green)
-                .opacity(showAward ? 1 : 0)
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? -25 : 0, y: showAward ? 0 : 0)
-                .foregroundColor(.purple)
-                .opacity(showAward ? 1 : 0)
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? 25 : 0, y: showAward ? 0 : 0)
-                .foregroundColor(.yellow)
-                .opacity(showAward ? 1 : 0)
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? 0 : 0, y: showAward ? 25 : 0)
-                .foregroundColor(.blue)
-                .opacity(showAward ? 1 : 0)
-            
-            
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? -18 : 0, y: showAward ? -18 : 0)
-                .foregroundColor(.red)
-                .opacity(showAward ? 1 : 0)
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? 18 : 0, y: showAward ? -18 : 0)
-                .foregroundColor(.pink)
-                .opacity(showAward ? 1 : 0)
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? 18 : 0, y: showAward ? 18 : 0)
-                .foregroundColor(.purple)
-                .opacity(showAward ? 1 : 0)
-            
-            HeartView()
-                .frame(width: 10, height: 10)
-                .offset(x: showAward ? -18 : 0, y: showAward ? 18 : 0)
-                .foregroundColor(.green)
-                .opacity(showAward ? 1 : 0)
-            
+            SmallHeartView(showAward: showAward, size: size, color: .red)
+                .offset(x: showAward ? -size * 0.45 : 0, y: showAward ? -size * 0.45 : 0)
+            SmallHeartView(showAward: showAward, size: size, color: .blue)
+                .offset(x: showAward ? size * 0.45 : 0, y: showAward ? -size * 0.45 : 0)
+            SmallHeartView(showAward: showAward, size: size, color: .purple)
+                .offset(x: showAward ? size * 0.45 : 0, y: showAward ? size * 0.45 : 0)
+            SmallHeartView(showAward: showAward, size: size, color: .green)
+                .offset(x: showAward ? -size * 0.45 : 0, y: showAward ? size * 0.45 : 0)
+
             ZStack {
                 HeartView()
-                    .frame(width: 40, height: 40)
+                    .frame(width: size, height: size)
                     .foregroundColor(.yellow)
                 
                 HeartView()
-                    .frame(width: 40, height: 40)
+                    .frame(width: size, height: size)
                     .scaleEffect(showAward ? 1 : 0)
                     .foregroundColor(showAward ? .red : .white)
                     .onTapGesture {

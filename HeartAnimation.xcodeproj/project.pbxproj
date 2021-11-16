@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C73594C274455CB00B5D891 /* SmallHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C73594B274455CB00B5D891 /* SmallHeartView.swift */; };
 		9CE97F8C274442EC0067CEF6 /* HeartAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE97F8B274442EC0067CEF6 /* HeartAnimationApp.swift */; };
 		9CE97F8E274442EC0067CEF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE97F8D274442EC0067CEF6 /* ContentView.swift */; };
 		9CE97F90274442EE0067CEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE97F8F274442EE0067CEF6 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C73594B274455CB00B5D891 /* SmallHeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallHeartView.swift; sourceTree = "<group>"; };
 		9CE97F88274442EC0067CEF6 /* HeartAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE97F8B274442EC0067CEF6 /* HeartAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationApp.swift; sourceTree = "<group>"; };
 		9CE97F8D274442EC0067CEF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				9CE97F8B274442EC0067CEF6 /* HeartAnimationApp.swift */,
 				9CE97F8D274442EC0067CEF6 /* ContentView.swift */,
 				9CE97F99274443070067CEF6 /* HeartView.swift */,
+				9C73594B274455CB00B5D891 /* SmallHeartView.swift */,
 				9CE97F8F274442EE0067CEF6 /* Assets.xcassets */,
 				9CE97F91274442EE0067CEF6 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				9CE97F8E274442EC0067CEF6 /* ContentView.swift in Sources */,
 				9CE97F9A274443070067CEF6 /* HeartView.swift in Sources */,
 				9CE97F8C274442EC0067CEF6 /* HeartAnimationApp.swift in Sources */,
+				9C73594C274455CB00B5D891 /* SmallHeartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
