@@ -65,7 +65,7 @@ struct ContentView: View {
                 Text("Tap the heart")
                     .foregroundColor(.white)
                     .font(.system(size: 24))
-                    .padding(.bottom, 32)
+                    .padding(.bottom, 64)
                     
             }
         }
